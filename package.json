@@ -1,5 +1,6 @@
 {
   "name": "image-search-frontend",
+  "homepage": "https://soufian3raki.github.io/Image-Search-Frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
@@ -15,6 +18,7 @@
     "@emotion/styled": "^11.11.0",
     "axios": "^1.6.7",
     "framer-motion": "^10.18.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
