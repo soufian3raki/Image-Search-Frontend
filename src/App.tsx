@@ -25,7 +25,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`http://localhost:3000/api/search?query=${query}&page=${page}`);
+      const response = await fetch(`https://image-search-abstraction-layer-free-dun.vercel.app/api/search?query=${query}&page=${page}`);
       const data = await response.json();
       
       if (data.status === 'success') {

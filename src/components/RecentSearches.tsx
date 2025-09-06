@@ -17,7 +17,7 @@ const RecentSearches = ({ onSelect }: RecentSearchesProps) => {
   useEffect(() => {
     const fetchRecentSearches = async () => {
       try {
-        const response = await fetch('http://localhost:3000/api/recent');
+        const response = await fetch('https://image-search-abstraction-layer-free-dun.vercel.app/api/recent');
         const data = await response.json();
         if (data.status === 'success') {
           setRecentSearches(data.data.map((item: any) => item.query));
