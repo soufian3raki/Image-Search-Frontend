@@ -1,7 +1,7 @@
 // 📝 Componente de búsquedas recientes
 // �� Importación de hooks y componentes necesarios
 import { useEffect, useState } from 'react';
-import { HStack, Tag, TagLabel, Wrap, Text } from '@chakra-ui/react';
+import { Tag, TagLabel, Wrap, Text } from '@chakra-ui/react';
 
 // 📋 Interfaz para las props del componente
 interface RecentSearchesProps {

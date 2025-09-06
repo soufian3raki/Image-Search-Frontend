@@ -1,6 +1,7 @@
 // 🔍 Componente de formulario de búsqueda
 // 📦 Importación de dependencias necesarias
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
 import { Input, Button, HStack, FormControl } from '@chakra-ui/react';
 
 // 📋 Interfaz para las props del componente
